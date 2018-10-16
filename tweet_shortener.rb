@@ -45,6 +45,6 @@ def shortened_tweet_truncator(tweet)
       word_substituter(tweet)[0...140] + "..."
     else
       post
-    end
-  #end.join(" ")
+    #end
+  end.join(" ")
 end
