@@ -46,7 +46,7 @@ def shortened_tweet_truncator(tweet)
   #binding.pry
   #tweet.collect do |post|
     if word_substituter(tweet).length > 140
-      word_substituter(tweet)[0...136] + "..."
+      word_substituter(tweet)[0...137] + "..."
     else
       tweet
     end
