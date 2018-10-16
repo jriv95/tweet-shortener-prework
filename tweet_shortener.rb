@@ -40,11 +40,11 @@ def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator(tweet)
-  #tweet.split(" ").collect do |post|
+  tweet.split(" ").collect do |post|
     if tweet.length > 140
       word_substituter(tweet)[0...140] + "..."
     else
       post
-    #end
+    end
   end.join(" ")
 end
