@@ -1,3 +1,5 @@
+require "pry"
+
 def dictionary
   shortened_words = {
    "hello" => "hi",
