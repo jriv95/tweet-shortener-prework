@@ -19,7 +19,7 @@ def word_substituter(tweet)
   tweet.split.collect do |word|
       if dictionary.keys.include?(word.downcase)
         word = dictionary[word.downcase]
-  
+
       else
         word
     end
@@ -43,6 +43,7 @@ def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator(tweet)
+  binding.pry
   tweet.split(" ").collect do |post|
     if word_substituter(post).length > 140
       word_substituter(post)[0...136] + "..."
